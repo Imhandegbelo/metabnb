@@ -1,7 +1,10 @@
 import React from "react"
 
-function Button(props) {
-  return({
-    // <button>
-  })
+class Button extends React.Component{
+  render(){
+    return(
+      <button></button>
+    )
+  }
 }
+export default Button
