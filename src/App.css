@@ -2,6 +2,31 @@
   /* text-align: center; */
 }
 
+.btn {
+  background-color: #A02279;
+  padding: 15px 25px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  /* width: 7rem; */
+}
+
+.btn-secondary{
+  background-color: #ffffff;
+  padding: 15px 25px;
+  color: #A02279;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+}
+.btn-secondary:hover{
+  box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.18);
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

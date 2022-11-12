@@ -3,10 +3,14 @@ import footerLogo from "../../assets/img/Groupfooter-icon.png";
 import facebook from "../../assets/img/facebook.png";
 import instagram from "../../assets/img/instagram.png";
 import twitter from "../../assets/img/twitter.png";
-import './Footer.css'
+import "./Footer.css";
 
 class Footer extends React.Component {
+  
   render() {
+
+    const social = [ facebook, instagram, twitter]
+
     return (
       <div className="footer">
         <div className="container">
@@ -15,9 +19,12 @@ class Footer extends React.Component {
               <img src={footerLogo} alt="footerLogo" />
             </div>
             <div>
-              <img src={facebook} alt="facebook" className="social" />
+              {social.map((e) => (
+                <img src={e} alt="`e`" className="social"/>
+              ))}
+              {/* <img src={facebook} alt="facebook" className="social" />
               <img src={instagram} alt="instagram" className="social" />
-              <img src={twitter} alt="twitter" className="social" />
+              <img src={twitter} alt="twitter" className="social" /> */}
             </div>
           </div>
           <div className="list-wrap flex-row">
@@ -51,7 +58,7 @@ class Footer extends React.Component {
           </div>
         </div>
         <div className="copywrite">
-          <p>&copy; 2022 Metabnb</p> 
+          <p>&copy; 2022 Metabnb</p>
         </div>
       </div>
     );

@@ -8,7 +8,8 @@
     display: flex;
     flex-direction: column;
 }
-.flex__1{
+
+.flex__1 {
     flex: 1;
     flex-wrap: wrap;
 }
@@ -22,12 +23,14 @@
 .container {
     display: flex;
     flex-direction: row;
+    max-width: 1240px;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
-    padding: 60px 20px 20px 100px;
+    /* align-content: center; */
+    /* padding: 60px 20px 20px 100px; */
 }
-.conatiner>div{
+
+.conatiner>div {
     width: 25%;
     padding: 1rem;
 }
@@ -49,7 +52,8 @@ h5 {
     color: #ffffff;
     margin-top: 0;
 }
-.links{
+
+.links {
     text-decoration: none;
     margin: 0;
     padding: 0;
