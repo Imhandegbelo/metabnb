@@ -18,13 +18,16 @@
 /* Other styles */
 .footer {
     background: #1D1D1E;
+    max-height: 322px;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     max-width: 1240px;
+    max-height: 322px;
     flex-wrap: wrap;
+    margin: auto auto;
     justify-content: space-between;
     /* align-content: center; */
     /* padding: 60px 20px 20px 100px; */

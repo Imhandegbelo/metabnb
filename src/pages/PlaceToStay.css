@@ -1,0 +1,84 @@
+.link_div {}
+
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #434343;
+    display: inline-flex;
+    margin: 0 1rem;
+}
+
+.small_nav{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    padding: 2rem 3.5rem;
+    max-width: 1200px;
+    justify-content: left;
+}
+.butn{
+    background-color: #ffffff;
+    padding: 13px 25px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #B4B4B4;
+    border-radius: 10px;
+    text-align: center;
+}
+.btn_icon{
+    margin-left: 1rem;
+}
+
+.community_section {
+    padding-bottom: 3.5rem;
+}
+
+.community {
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+
+.community span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #434343;
+}
+
+.community b {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    float: right;
+    margin-top: 0.5rem;
+}
+
+.community .star{
+    padding-top: 1rem;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.community .duration{
+    font-weight: 400;
+}
+
+.community_section h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+    text-align: center;
+}
+
+.community_wrapper {
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    padding: 1rem;
+}

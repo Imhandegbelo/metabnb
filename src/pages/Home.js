@@ -70,15 +70,15 @@ class Home extends React.Component {
             {communities.map((community) => (
               <div className="community_wrapper">
                 <img src={community} alt="community" />
-                <div className="">
+                <div className="name-price">
                   <span>Desert King</span>
                   <b>1MBT per night</b>
                 </div>
                 <div className="">
                   <span>2345km away</span>
-                  <b>available for 2weeks stay</b>
+                  <b className="duration">available for 2weeks stay</b>
                 </div>
-                <div className="">
+                <div className="star">
                   <img src={star} alt="star" />
                   <img src={star} alt="star" />
                   <img src={star} alt="star" />

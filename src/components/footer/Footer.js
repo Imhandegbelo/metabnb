@@ -3,13 +3,14 @@ import footerLogo from "../../assets/img/Groupfooter-icon.png";
 import facebook from "../../assets/img/facebook.png";
 import instagram from "../../assets/img/instagram.png";
 import twitter from "../../assets/img/twitter.png";
-import "./Footer.css";
+// import "./Footer.css";
 
 class Footer extends React.Component {
   
   render() {
 
     const social = [ facebook, instagram, twitter]
+    const about__us = ["Road map", "Creators", "Career", "Contact us"]
 
     return (
       <div className="footer">
@@ -20,7 +21,7 @@ class Footer extends React.Component {
             </div>
             <div>
               {social.map((e) => (
-                <img src={e} alt="`e`" className="social"/>
+                <img src={e} alt="social" className="social"/>
               ))}
               {/* <img src={facebook} alt="facebook" className="social" />
               <img src={instagram} alt="instagram" className="social" />
@@ -49,10 +50,9 @@ class Footer extends React.Component {
             <div className="flex__1">
               <h5>About us</h5>
               <ul className="links">
-                <li>Road map</li>
-                <li>Creators</li>
-                <li>Career</li>
-                <li>Contact us</li>
+                {about__us.map((links) =>(
+                  <li>{links}</li>
+                ))}
               </ul>
             </div>
           </div>
