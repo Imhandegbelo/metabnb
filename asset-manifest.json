@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/metabnb/static/css/main.dedea2cb.css",
+    "main.js": "/metabnb/static/js/main.046e0d20.js",
+    "static/js/787.5186970a.chunk.js": "/metabnb/static/js/787.5186970a.chunk.js",
+    "static/media/photo3.png": "/metabnb/static/media/photo3.9797573dda862feed59d.png",
+    "static/media/grouped.png": "/metabnb/static/media/grouped.0a6b2fd543f6a2906835.png",
+    "static/media/Frame6.png": "/metabnb/static/media/Frame6.67b9635268474386ccd7.png",
+    "static/media/Frame3.png": "/metabnb/static/media/Frame3.8ca5a7a1a693283761f7.png",
+    "static/media/Frame12.png": "/metabnb/static/media/Frame12.53daa7ab44011ba4a150.png",
+    "static/media/Frame8.png": "/metabnb/static/media/Frame8.1d2adc92edf4702fba51.png",
+    "static/media/Frame11.png": "/metabnb/static/media/Frame11.eea342487b479bde7a03.png",
+    "static/media/Frame13.png": "/metabnb/static/media/Frame13.1dbd383b69ab2f124840.png",
+    "static/media/Frame16.png": "/metabnb/static/media/Frame16.534014b8ed09e3744675.png",
+    "static/media/Frame4.png": "/metabnb/static/media/Frame4.43d4cf4eb2d63ef5b60f.png",
+    "static/media/Frame14.png": "/metabnb/static/media/Frame14.6e7b95ed10ecf53c5bf7.png",
+    "static/media/Frame15.png": "/metabnb/static/media/Frame15.c290ae67ee389f5743d8.png",
+    "static/media/Frame2.png": "/metabnb/static/media/Frame2.2a924bfc6a0d88cb9672.png",
+    "static/media/Frame9.png": "/metabnb/static/media/Frame9.7233110c44e30ee45c25.png",
+    "static/media/Frame5.png": "/metabnb/static/media/Frame5.6f7061fafe7153fd63e4.png",
+    "static/media/Frame7.png": "/metabnb/static/media/Frame7.8f8b11a4e2d7d5d2e43e.png",
+    "static/media/Frame10.png": "/metabnb/static/media/Frame10.7b3fac287ce4d0c040e3.png",
+    "static/media/Frame1.png": "/metabnb/static/media/Frame1.1a903634dcefb8e49efb.png",
+    "index.html": "/metabnb/index.html",
+    "main.dedea2cb.css.map": "/metabnb/static/css/main.dedea2cb.css.map",
+    "main.046e0d20.js.map": "/metabnb/static/js/main.046e0d20.js.map",
+    "787.5186970a.chunk.js.map": "/metabnb/static/js/787.5186970a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dedea2cb.css",
+    "static/js/main.046e0d20.js"
+  ]
+}
