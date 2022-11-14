@@ -50,15 +50,17 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div id="NFT" className="nft-section flex-row">
-          <div>
-            <img src={MBtoken} alt="MBtoken" className="nft" />
-          </div>
-          <div>
-            <img src={Metamask} alt="Metamask" className="nft" />
-          </div>
-          <div>
-            <img src={OpenSea} alt="Opensea" className="nft" />
+        <div id="NFT" className="container nft-section flex-row">
+          <div className="row">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <img src={MBtoken} alt="MBtoken" className="nft" />
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <img src={Metamask} alt="Metamask" className="nft" />
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <img src={OpenSea} alt="Opensea" className="nft" />
+            </div>
           </div>
         </div>
 
@@ -69,7 +71,7 @@ class Home extends React.Component {
           <div className="community">
             {communities.map((community) => (
               <div className="community_wrapper">
-                <img src={community} alt="community" />
+                <img src={community} alt="community" className="place_image" />
                 <div className="name-price">
                   <span>Desert King</span>
                   <b>1MBT per night</b>

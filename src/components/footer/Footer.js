@@ -10,7 +10,6 @@ import "./Footer.css";
 
 class Footer extends React.Component {
   render() {
-    const social = [facebook, instagram, twitter];
     const places = ["Castle", "Farm", "Beach", "Learn more"];
     const community = ["NFT", "Tokens", "Landlord", "Discord"];
     const about__us = ["Road map", "Creators", "Career", "Contact us"];
@@ -19,7 +18,7 @@ class Footer extends React.Component {
       <div className="footer">
         <Container>
           <Row>
-            <Col xl={4} lg={4} sm={12}>
+            <Col xl={4} lg={4} md={4} sm={12}>
               <div>
                 <img src={footerLogo} alt="footerLogo" />
               </div>
@@ -30,28 +29,28 @@ class Footer extends React.Component {
                 <img src={twitter} alt="twitter" className="social" />
               </div>
             </Col>
-            <Col xl={8} lg={8} sm={12}>
+            <Col xl={8} lg={8} md={8} sm={12}>
               <Container>
                 <Row>
-                  <Col xl={4} lg={4} sm={12}>
-                    <h5>Community</h5>
-                    <Container fluid className="no-padding">
+                  <Col xl={4} lg={4} md={4} sm={12}>
+                    <h5 className="text-white">Community</h5>
+                    <Container fluid className="pl-10">
                       {community.map((comms) => (
                         <h6>{comms}</h6>
                       ))}
                     </Container>
                   </Col>
-                  <Col xl={4} lg={4} sm={12}>
-                    <h5>Places</h5>
-                    <Container fluid className="no-padding">
+                  <Col xl={4} lg={4} md={4} sm={12}>
+                    <h5 className="text-white">Places</h5>
+                    <Container fluid className="pl-10">
                       {places.map((place) => (
                         <h6>{place}</h6>
                       ))}
                     </Container>
                   </Col>
-                  <Col xl={4} lg={4} sm={12}>
-                    <h5>About us</h5>
-                    <Container fluid className="no-padding">
+                  <Col xl={4} lg={4} md={4} sm={12}>
+                    <h5 className="text-white">About us</h5>
+                    <Container fluid className="pl-10">
                       {about__us.map((links) => (
                         <h6>{links}</h6>
                       ))}

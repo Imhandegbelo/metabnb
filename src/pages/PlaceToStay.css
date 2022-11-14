@@ -1,15 +1,26 @@
-.link_div {}
+.nav {
+    max-width: 1240px;
+    margin: 2rem auto;
+}
 
-h3 {
+.btn-container {
+    position: relative;
+    left: 3rem;
+    top: 12%;
+    margin-left: 20px;
+}
+
+h5 {
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
     color: #434343;
     display: inline-flex;
     margin: 0 1rem;
+    padding-top: 1rem;
 }
 
-.small_nav{
+.small_nav {
     display: flex;
     flex-direction: row;
     -ms-flex-direction: row;
@@ -17,17 +28,14 @@ h3 {
     max-width: 1200px;
     justify-content: left;
 }
-.butn{
-    background-color: #ffffff;
-    padding: 13px 25px;
-    color: #333333;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid #B4B4B4;
-    border-radius: 10px;
-    text-align: center;
+
+.btn-outline-secondary {
+    position: relative;
+    right: 10%;
+    top: 12%;
 }
-.mybtn_icon{
+
+.mybtn_icon {
     margin-left: 1rem;
 }
 
@@ -57,7 +65,7 @@ h3 {
     margin-top: 0.5rem;
 }
 
-.community .star{
+.community .star {
     padding-top: 1rem;
     width: 40%;
     display: flex;
@@ -65,7 +73,8 @@ h3 {
     justify-content: space-between;
     gap: 0.5rem;
 }
-.community .duration{
+
+.community .duration {
     font-weight: 400;
 }
 
@@ -81,4 +90,37 @@ h3 {
     border: 1px solid #D7D7D7;
     border-radius: 15px;
     padding: 1rem;
+}
+
+@media (max-width:375px) {
+    .community{
+        max-width: 360px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        margin: 0 auto;
+        justify-content: space-around ;
+    }
+    .place_image{
+        width: 320px;
+    }
+    .nav-hidden{
+        display: none;
+    }
+}
+
+@media (max-width:900px){
+    .community {
+        max-width: 880px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+  .community_wrapper{
+    /* width: 50%; */
+  }
+
 }

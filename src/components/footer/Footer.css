@@ -1,5 +1,5 @@
-.no-padding{
-    padding: 0 !important;;
+.pl-10{
+    padding-left: 1rem !important;;
 }
 .footer {
     background: #1D1D1E;
@@ -44,4 +44,10 @@ h6 {
     display: flex;
     align-items: center;
     padding: 2rem 4.8rem;
+}
+
+@media (max-width: 375px){
+    .social{
+        margin: 32px 32px;
+    }
 }

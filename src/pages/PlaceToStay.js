@@ -52,14 +52,15 @@ class PlaceToStay extends React.Component {
     ];
     return (
       <div>
-        <div className="small_nav">
-          <div className="link_div">
+        <div className="text-center nav">
+          <div className="nav-hidden">
             {small_nav.map((elements) => (
-              <h3>{elements}</h3>
+              <h5>{elements}</h5>
             ))}
           </div>
-          <div>
-            <button className="butn">
+
+          <div className="btn-container">
+            <button className="btn btn-outline-secondary">
               Location
               <span>
                 <img src={filter} alt="filter" className="mybtn_icon" />
@@ -72,7 +73,7 @@ class PlaceToStay extends React.Component {
           <div className="community">
             {place_to_stay.map((places) => (
               <div className="community_wrapper">
-                <img src={places} alt="places" />
+                <img src={places} alt="places" className="place_image" />
                 <div className="name-price">
                   <span>Desert King</span>
                   <b>1MBT per night</b>

@@ -86,10 +86,11 @@ input:focus {
 /* Community Section */
 .community_section {
     padding-bottom: 3.5rem;
+    margin-top: 1.5rem;
 }
 
 .community {
-    max-width: 1240px;
+    /* max-width: 1240px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
@@ -110,7 +111,7 @@ input:focus {
     margin-top: 0.5rem;
 }
 
-.community .star{
+.community .star {
     padding-top: 1rem;
     width: 40%;
     display: flex;
@@ -118,13 +119,15 @@ input:focus {
     justify-content: space-between;
     gap: 0.5rem;
 }
-.community .duration{
+
+.community .duration {
     font-weight: 400;
 }
 
 .community_section h2 {
     font-weight: 700;
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 3rem;
     line-height: 60px;
     color: #000000;
     text-align: center;
@@ -148,7 +151,6 @@ input:focus {
 
 .learn-more-section div {
     flex: 1;
-    /* border: 1px solid black; */
 }
 
 .learn-more-section h1 {
@@ -176,10 +178,108 @@ input:focus {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .photogroup {
     width: 704px;
     height: 574.85px;
+}
+
+@media(max-width: 375px) {
+    .welcome-section img{
+        width: inherit;
+        margin-top: 20px;
+    }
+    .small-text {
+        margin: 0;
+        width: 343px;
+        font-size: 18px;
+        /* text-justify: inter-word; */
+    }
+
+    input, .search-btn{
+        margin-top: 1rem;
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+
+    .big-text {
+
+        font-size: 44px;
+        letter-spacing: -0.02em;
+        margin: 30px 0px;
+    }
+    .sideImg{
+        width: 343px;
+    }
+
+    .community_section h2 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .community {
+        max-width: 360px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .place_image {
+        width: 410px;
+    }
+
+    .welcome-section {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .learn-more-section {
+        padding: 1rem;
+    }
+
+    .learn-more-section h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 10%;
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    /* sideImg */
+    .desc p {
+        margin-top: 10%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    @media (max-width:900px){
+        .welcome-section{
+            padding: 1rem;
+        }
+        .community {
+            max-width: 880px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            margin: 0 auto;
+            justify-content: space-around;
+        }
+        .learn-more-section{
+            padding: 2rem;
+        }
+        .photogroup{
+            width: 440px;
+        }
+        .big-text {
+            font-size: 50px;
+            letter-spacing: -0.02em;
+            margin: 30px 0px;
+        }
+    }
 }
