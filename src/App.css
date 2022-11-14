@@ -1,8 +1,8 @@
 .App {
-  /* text-align: center; */
+  font-family: 'Red Rose';
 }
 
-.btn {
+.mybtn {
   background-color: #A02279;
   padding: 15px 25px;
   color: #ffffff;
@@ -10,10 +10,9 @@
   font-weight: 400;
   border: none;
   border-radius: 10px;
-  /* width: 7rem; */
 }
 
-.btn-secondary{
+.mybtn-secondary{
   background-color: #ffffff;
   padding: 15px 25px;
   color: #A02279;
@@ -22,16 +21,9 @@
   border: none;
   border-radius: 10px;
 }
-.btn-secondary:hover{
-  box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.18);
+.mybtn-secondary:hover{
   cursor: pointer;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }

@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
-import Home from "../../pages/Home";
-import PlaceToStay from "../../pages/PlaceToStay";
 import "./Header.css";
-// import Button from '../Button'
+import WalletModal from "../WalletModal";
 
 class Header extends React.Component {
   render() {
+    // const [modalShow, setModalShow] = useState(false);
+    
+
     return (
       <div className="header">
         <div>
-          <a href="/"><img src={logo} alt="MetaBnb" className="logo"/></a>
+          <a href="/">
+            <img src={logo} alt="MetaBnb" className="logo" />
+          </a>
         </div>
         <div className="links">
           <Link to="/">Home</Link>
@@ -19,9 +22,13 @@ class Header extends React.Component {
           <Link>NFTs</Link>
           <Link>Community</Link>
         </div>
-        <div className="pt-5">
-          <a href="/connect-wallet"><button className="btn">Connect wallet</button></a>
+        <div className="">
+          <button className="mybtn">
+            Connect wallet
+          </button>
+          {/* <Button className="btn btn-primary">Connect wallet</Button> */}
         </div>
+        {/* <WalletModal show={modalShow} onHide={() => setModalShow(false)} />; */}
       </div>
     );
   }

@@ -98,7 +98,7 @@ class Home extends React.Component {
               amazing gift cards which are traded as NFTs. These NFTs gives our
               cutomer access to loads of our exclusive services. Learn more
             </p>
-            <button className="btn btn-secondary">Learn more</button>
+            <button className="mybtn mybtn-secondary">Learn more</button>
           </div>
           <div className="img-container">
             <img src={grpPhoto} alt="photoGroup" className="photogroup" />

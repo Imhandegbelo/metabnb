@@ -62,7 +62,7 @@ class PlaceToStay extends React.Component {
             <button className="butn">
               Location
               <span>
-                <img src={filter} alt="filter" className="btn_icon" />
+                <img src={filter} alt="filter" className="mybtn_icon" />
               </span>
             </button>
           </div>

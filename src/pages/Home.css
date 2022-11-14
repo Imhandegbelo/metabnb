@@ -29,7 +29,7 @@ span {
 }
 
 input {
-    padding: 17px 12px;
+    padding: 15px 12px;
     font-size: 14px;
     line-height: 130%;
     color: #B8B8B8;
@@ -128,6 +128,7 @@ input:focus {
     line-height: 60px;
     color: #000000;
     text-align: center;
+    margin: 2rem 0;
 }
 
 .community_wrapper {

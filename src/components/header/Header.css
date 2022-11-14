@@ -1,6 +1,7 @@
 .pt-5{
-    padding-top: 5px;
+   
 }
+
 .logo{
     margin-top: 5px;
 }
@@ -9,7 +10,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.6rem 6rem;
+    margin: 1rem 6rem;
+    height: 50px;
 }
 
 .links {
