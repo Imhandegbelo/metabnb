@@ -119,8 +119,25 @@ h5 {
         justify-content: space-around;
     }
 
-  .community_wrapper{
-    /* width: 50%; */
-  }
+}
 
+@media (min-width:768px){
+    .header {
+        margin: 1rem !important;
+    }
+    .community {
+        max-width: 870px;
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 1rem;
+        margin: 0 auto;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .community img{
+        width: 100%
+    }
+    .community span, .community b{
+        font-size: 16px;
+    }
 }

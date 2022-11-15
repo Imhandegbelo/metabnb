@@ -12,7 +12,8 @@ import Frame5 from "../assets/img/Frame5.png";
 import Frame6 from "../assets/img/Frame6.png";
 import Frame7 from "../assets/img/Frame7.png";
 import Frame8 from "../assets/img/Frame8.png";
-import star from "../assets/img/Star.png";
+import star from "../assets/img/star.svg";
+import { Carousel } from "react-responsive-carousel";
 import "./Home.css";
 
 class Home extends React.Component {
@@ -45,13 +46,47 @@ class Home extends React.Component {
               <button className="search-btn">Search</button>
             </div>
           </div>
-          <div className="sideImg">
-            <img src={grouped} alt="photogroup" />
+          <div className="sideImg sm-d-none md-d-none">
+            <img src={grouped} alt="photogroup" className="" />
           </div>
         </div>
 
-        <div id="NFT" className="container-fluid nft-section flex-row">
-          <div className="row">
+        <div id="NFT" className="container-fluid nft-section ">
+          <div
+            className="d-none xl-d-flex align-items-center"
+            style={{ "--gap": "264px" }}
+          >
+            <img src={MBtoken} alt="" />
+            <img src={Metamask} alt="" />
+            <img src={OpenSea} alt="" />
+          </div>
+
+          <div className=" md-d-flex align-items-center xl-d-none justify-content-space-between max-870">
+            <img src={MBtoken} alt="" />
+            <img src={Metamask} alt="" />
+            <img src={OpenSea} alt="" />
+          </div>
+
+          <div className="md-d-none">
+            <Carousel
+              autoPlay
+              centerMode
+              infiniteLoop
+              renderIndicator={false}
+              renderThumbs={() => false}
+              renderArrowNext={() => false}
+              renderArrowPrev={() => false}
+              dynamicHeight
+              showStatus={false}
+              thumbWidth={null}
+            >
+              <img style={{ maxHeight: "37.56px" }} src={MBtoken} alt="" />
+              <img style={{ maxHeight: "37.56px" }} src={Metamask} alt="" />
+              <img style={{ maxHeight: "37.56px" }} src={OpenSea} alt="" />
+            </Carousel>
+          </div>
+
+          {/* <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-12">
               <img src={MBtoken} alt="MBtoken" className="nft" />
             </div>
@@ -61,7 +96,7 @@ class Home extends React.Component {
             <div className="col-lg-4 col-md-4 col-sm-12">
               <img src={OpenSea} alt="Opensea" className="nft" />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="community_section" id="community">
@@ -102,8 +137,12 @@ class Home extends React.Component {
             </p>
             <button className="mybtn mybtn-secondary">Learn more</button>
           </div>
-          <div className="img-container">
-            <img src={grpPhoto} alt="photoGroup" className="photogroup" />
+          <div className="img-container sm-d-none md-d-none">
+            <img
+              src={grpPhoto}
+              alt="photoGroup"
+              className="photogroup sm-d-none"
+            />
           </div>
         </div>
       </div>

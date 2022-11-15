@@ -28,7 +28,7 @@ const WalletModal = NiceModal.create(
           <div className="header d-flex justify-content-space-between align-items-center">
             <h4 className="modal-title">Connect Wallet</h4>
 
-            <button isIconButton className="close-button" onClick={modal.hide}>
+            <button className="close-button" onClick={modal.hide}>
               <img src={closeIcon} alt="" />
             </button>
           </div>

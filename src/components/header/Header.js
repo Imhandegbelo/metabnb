@@ -11,13 +11,13 @@ class Header extends React.Component {
   render() {
     // export function Header(){
     return (
-      <div className="header">
+      <div className="header md-1-margin">
         <div>
           <a href="/metabnb">
             <img src={logo} alt="MetaBnb" className="logo" />
           </a>
         </div>
-        <div className="links lg-d-flex md-d-none">
+        <div className="links d-none lg-d-flex">
           <Link to="/metabnb">Home</Link>
           <Link to="/metabnb/place-to-stay">Place to Stay</Link>
           <Link>NFTs</Link>
@@ -25,7 +25,7 @@ class Header extends React.Component {
         </div>
         <div className="">
           <button
-            className="mybtn md-d-none"
+            className="mybtn d-none lg-d-flex"
             onClick={() => NiceModal.show(WalletModal)}
           >
             Connect wallet

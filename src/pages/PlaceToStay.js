@@ -17,7 +17,7 @@ import Pic14 from "../assets/img/Frame14.png";
 import Pic15 from "../assets/img/Frame15.png";
 import Pic16 from "../assets/img/Frame16.png";
 import filter from "../assets/img/filter.png";
-import star from "../assets/img/Star.png";
+import star from "../assets/img/star.svg";
 
 class PlaceToStay extends React.Component {
   render() {
