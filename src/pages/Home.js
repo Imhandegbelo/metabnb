@@ -50,7 +50,7 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div id="NFT" className="container nft-section flex-row">
+        <div id="NFT" className="container-fluid nft-section flex-row">
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-12">
               <img src={MBtoken} alt="MBtoken" className="nft" />

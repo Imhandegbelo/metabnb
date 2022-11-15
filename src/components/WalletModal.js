@@ -1,34 +1,72 @@
-import {useState} from "react"
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import NiceModal, { useModal } from "@ebay/nice-modal-react";
+import Dialog from "rc-dialog";
+import "rc-dialog/assets/index.css";
+import arrowIcon from "../../images/arrow.svg";
+import closeIcon from "../../images/close-icon.svg";
+import metaLogo from "../../images/meta-logo.svg";
+import walletConnectLogo from "../../images/wallet-connect-logo.svg";
+import { Button } from "../../components/button/button";
+import "./connect-wallet.css";
 
-function WalletModal(props) {
-    const [modalShow, setModalShow] = useState(false);
-  return (
-    <Modal
-      {...props}
-      size="md"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  );
-}
+export const ConnectWalletModal = NiceModal.create(
+  function ConnectWalletModal() {
+    const modal = useModal();
 
-export default WalletModal
+    return (
+      <Dialog
+        visible={modal.visible}
+        wrapClassName="modal-center"
+        animation="zoom"
+        maskAnimation="fade"
+        onClose={modal.hide}
+        style={{
+          maxWidth: "600px",
+          width: "calc(100% - 32px)",
+        }}
+        closeIcon={<></>}
+      >
+        <div className="modal connect-wallet-modal">
+          <div className="header d-flex justify-content-space-between align-items-center">
+            <h4 className="modal-title">Connect Wallet</h4>
+
+            <Button isIconButton className="close-button" onClick={modal.hide}>
+              <img src={closeIcon} alt="" />
+            </Button>
+          </div>
+
+          <div className="body">
+            <div className="d-grid" style={{ "--gap": "16px" }}>
+              <p className="title">Choose your preferred wallet:</p>
+
+              <button className="d-flex justify-content-space-between align-items-center">
+                <div
+                  className="d-flex align-items-center"
+                  style={{ "--gap": "16px" }}
+                >
+                  <img src={metaLogo} alt="" />
+
+                  <p>Metamask</p>
+                </div>
+
+                <img src={arrowIcon} alt="" />
+              </button>
+
+              <button className="d-flex justify-content-space-between align-items-center">
+                <div
+                  className="d-flex align-items-center"
+                  style={{ "--gap": "16px" }}
+                >
+                  <img src={walletConnectLogo} alt="" />
+
+                  <p>WalletConnect</p>
+                </div>
+
+                <img src={arrowIcon} alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </Dialog>
+    );
+  }
+);

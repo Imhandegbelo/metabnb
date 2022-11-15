@@ -20,7 +20,7 @@ class Header extends React.Component {
         </div>
         <div className="links">
           <Link to="/metabnb">Home</Link>
-          <Link to="/place-to-stay">Place to Stay</Link>
+          <Link to="/metabnb/place-to-stay">Place to Stay</Link>
           <Link>NFTs</Link>
           <Link>Community</Link>
         </div>

@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='metabnb/' exact element={<Home/>} />
-        <Route path='/place-to-stay' element={<PlaceToStay/>} />
+        <Route path='/metabnb' exact element={<Home/>} />
+        <Route path='/metabnb/place-to-stay' element={<PlaceToStay/>} />
       </Routes>
       <Footer />
     </div>
