@@ -2,7 +2,7 @@ import NiceModal, { useModal } from "@ebay/nice-modal-react";
 import Drawer from "rc-drawer";
 import "rc-drawer/assets/index.css";
 import { NavLink } from "react-router-dom";
-import WalletModal from "./WalletModal";
+import {WalletModal} from "./WalletModal";
 import "./MobilMenu.css";
 
 export const MobileMenu = NiceModal.create(function MobileMenu() {

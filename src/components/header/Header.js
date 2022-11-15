@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import hamburger from "../../assets/img/hamburger.svg";
 import { MobileMenu } from "../MobileMenu";
-import WalletModal from "../WalletModal";
+import {WalletModal} from "../WalletModal";
 import NiceModal from "@ebay/nice-modal-react";
 
 class Header extends React.Component {
@@ -17,7 +17,7 @@ class Header extends React.Component {
             <img src={logo} alt="MetaBnb" className="logo" />
           </a>
         </div>
-        <div className="links d-none lg-d-flex">
+        <div className="links md-d-none lg-d-flex">
           <Link to="/metabnb">Home</Link>
           <Link to="/metabnb/place-to-stay">Place to Stay</Link>
           <Link>NFTs</Link>
@@ -25,7 +25,7 @@ class Header extends React.Component {
         </div>
         <div className="">
           <button
-            className="mybtn d-none lg-d-flex"
+            className="mybtn md-d-none lg-d-flex"
             onClick={() => NiceModal.show(WalletModal)}
           >
             Connect wallet

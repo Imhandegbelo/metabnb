@@ -7,7 +7,7 @@ import metaLogo from "../assets/img/meta-logo.svg";
 import walletConnectLogo from "../assets/img/wallet-connect-logo.svg";
 import "./WalletModal.css";
 
-const WalletModal = NiceModal.create(
+export const WalletModal = NiceModal.create(
   function WalletModal() {
     const modal = useModal();
 
@@ -70,4 +70,4 @@ const WalletModal = NiceModal.create(
   }
 );
 
-export default WalletModal
+

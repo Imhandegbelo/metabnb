@@ -1,32 +1,25 @@
 .nav {
     max-width: 1240px;
-    margin: 2rem auto;
+    margin: 2rem auto;overflow-x: scroll;
+    max-width: max-content;
+    display: inline-flex
 }
 
-.btn-container {
-    position: relative;
-    left: 3rem;
-    top: 12%;
-    margin-left: 20px;
+.nav-hidden{
+    width: max-content;
+    max-height: 30px;
+    margin-right: 40px;
 }
 
-h5 {
+.filter-button {
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
     color: #434343;
-    display: inline-flex;
-    margin: 0 1rem;
-    padding-top: 1rem;
-}
-
-.small_nav {
-    display: flex;
-    flex-direction: row;
-    -ms-flex-direction: row;
-    padding: 2rem 3.5rem;
-    max-width: 1200px;
-    justify-content: left;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: none;
 }
 
 .btn-outline-secondary {
@@ -36,7 +29,7 @@ h5 {
 }
 
 .mybtn_icon {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 .community_section {
@@ -104,21 +97,37 @@ h5 {
     .place_image{
         width: 320px;
     }
-    .nav-hidden{
-        display: none;
-    }
+    
 }
 
-@media (max-width:900px){
+@media(max-width: 767px) {
+    .nav-hidden{
+        overflow-x: auto;
+    }
+    .nav-hidden::-webkit-scrollbar,
+    .nav-hidden::-webkit-scrollbar-track,
+    .nav-hidden::-webkit-scrollbar-track:hover{
+        background-color: #f4f4f4;
+    }
+
+    .community_section h2 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
     .community {
-        max-width: 880px;
+        max-width: 100%;
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr !important;
         grid-gap: 1rem;
         margin: 0 auto;
         justify-content: space-around;
+        padding: 1rem;
     }
 
+    .place_image {
+        width: 100%;
+    }
 }
 
 @media (min-width:768px){
@@ -126,18 +135,40 @@ h5 {
         margin: 1rem !important;
     }
     .community {
-        max-width: 870px;
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr !important;
         grid-gap: 1rem;
         margin: 0 auto;
         justify-content: space-around;
         padding: 1rem;
+        margin: 0;
     }
     .community img{
         width: 100%
     }
     .community span, .community b{
         font-size: 16px;
+    }
+}
+@media(min-width:1024px){
+    .community {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr!important;
+        grid-gap: 1rem;
+        margin: 0 auto;
+        justify-content: space-around;
+        padding: 1rem;
+        margin: 0;
+    }
+    
+    .community img {
+        width: 100%
+    }
+    
+    .community span,
+    .community b {
+        font-size: 12px;
     }
 }

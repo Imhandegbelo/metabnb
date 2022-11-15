@@ -1,7 +1,7 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import footerLogo from "../../assets/img/Groupfooter-icon.png";
 import facebook from "../../assets/img/facebook.png";
 import instagram from "../../assets/img/instagram.png";
@@ -23,7 +23,6 @@ class Footer extends React.Component {
                 <img src={footerLogo} alt="footerLogo" />
               </div>
               <div>
-   
                 <img src={facebook} alt="facebook" className="social" />
                 <img src={instagram} alt="instagram" className="social" />
                 <img src={twitter} alt="twitter" className="social" />
@@ -62,7 +61,9 @@ class Footer extends React.Component {
           </Row>
         </Container>
         <div className="copywrite">
-          <p>&copy; 2022 Metabnb</p>
+          <div>
+            <p>&copy; 2022 Metabnb</p>
+          </div>
         </div>
       </div>
     );

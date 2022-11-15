@@ -52,20 +52,24 @@ class PlaceToStay extends React.Component {
     ];
     return (
       <div>
-        <div className="text-center nav">
-          <div className="nav-hidden">
-            {small_nav.map((elements) => (
-              <h5>{elements}</h5>
-            ))}
-          </div>
-
-          <div className="btn-container">
-            <button className="btn btn-outline-secondary">
-              Location
-              <span>
-                <img src={filter} alt="filter" className="mybtn_icon" />
-              </span>
-            </button>
+        <div className="nav d-flex align-items-center">
+          <div
+            className="filter-buttons align-items-center d-flex"
+            style={{ "--gap": "65px" }}
+          >
+            <div className="nav-hidden d-flex align-items-center">
+              {small_nav.map((elements) => (
+                <button className="filter-button">{elements}</button>
+              ))}
+            </div>
+            <div>
+              <button className="btn btn-outline-secondary d-flex">
+                Location
+                <span>
+                  <img src={filter} alt="filter" className="mybtn_icon" />
+                </span>
+              </button>
+            </div>
           </div>
         </div>
 
