@@ -2,15 +2,14 @@ import React from "react";
 import logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
-// import WalletModal from "../WalletModal";
+import hamburger from "../../assets/img/hamburger.svg";
+import { MobileMenu } from "../MobileMenu";
+import WalletModal from "../WalletModal";
+import NiceModal from "@ebay/nice-modal-react";
 
 class Header extends React.Component {
   render() {
-    // const [modalShow, setModalShow] = useState(false);
-    const handleClick = (e)=>{
-      console.log("Button clicked")
-    }
-
+    // export function Header(){
     return (
       <div className="header">
         <div>
@@ -18,19 +17,28 @@ class Header extends React.Component {
             <img src={logo} alt="MetaBnb" className="logo" />
           </a>
         </div>
-        <div className="links">
+        <div className="links lg-d-flex md-d-none">
           <Link to="/metabnb">Home</Link>
           <Link to="/metabnb/place-to-stay">Place to Stay</Link>
           <Link>NFTs</Link>
           <Link>Community</Link>
         </div>
         <div className="">
-          <button className="mybtn" onClick={handleClick}>
+          <button
+            className="mybtn md-d-none"
+            onClick={() => NiceModal.show(WalletModal)}
+          >
             Connect wallet
           </button>
-          {/* <Button className="btn btn-primary">Connect wallet</Button> */}
+
+          <button
+            onClick={() => NiceModal.show(MobileMenu)}
+            className="lg-d-none no-border no-bg"
+          >
+            <img src={hamburger} alt="" />
+          </button>
+          {/* d-none lg-d-block */}
         </div>
-        {/* <WalletModal show={modalShow} onHide={() => setModalShow(false)} />; */}
       </div>
     );
   }

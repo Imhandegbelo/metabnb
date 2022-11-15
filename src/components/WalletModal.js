@@ -1,15 +1,14 @@
 import NiceModal, { useModal } from "@ebay/nice-modal-react";
 import Dialog from "rc-dialog";
 import "rc-dialog/assets/index.css";
-import arrowIcon from "../../images/arrow.svg";
-import closeIcon from "../../images/close-icon.svg";
-import metaLogo from "../../images/meta-logo.svg";
-import walletConnectLogo from "../../images/wallet-connect-logo.svg";
-import { Button } from "../../components/button/button";
-import "./connect-wallet.css";
+import arrowIcon from "../assets/img/arrow.svg";
+import closeIcon from "../assets/img/close-icon.svg";
+import metaLogo from "../assets/img/meta-logo.svg";
+import walletConnectLogo from "../assets/img/wallet-connect-logo.svg";
+import "./WalletModal.css";
 
-export const ConnectWalletModal = NiceModal.create(
-  function ConnectWalletModal() {
+const WalletModal = NiceModal.create(
+  function WalletModal() {
     const modal = useModal();
 
     return (
@@ -29,9 +28,9 @@ export const ConnectWalletModal = NiceModal.create(
           <div className="header d-flex justify-content-space-between align-items-center">
             <h4 className="modal-title">Connect Wallet</h4>
 
-            <Button isIconButton className="close-button" onClick={modal.hide}>
+            <button isIconButton className="close-button" onClick={modal.hide}>
               <img src={closeIcon} alt="" />
-            </Button>
+            </button>
           </div>
 
           <div className="body">
@@ -70,3 +69,5 @@ export const ConnectWalletModal = NiceModal.create(
     );
   }
 );
+
+export default WalletModal
