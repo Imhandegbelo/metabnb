@@ -53,6 +53,6 @@ h6 {
 }
 @media(min-width: 768px){
     .copywrite p{
-        padding-left: 2.8rem;
+        padding-left: 3vw;
     }
 }

@@ -46,7 +46,7 @@ class Home extends React.Component {
               <button className="search-btn">Search</button>
             </div>
           </div>
-          <div className="sideImg sm-d-none md-d-none">
+          <div className="sideImg sm-d-none md-d-none lg-d-flex">
             <img src={grouped} alt="photogroup" className="" />
           </div>
         </div>
@@ -85,18 +85,6 @@ class Home extends React.Component {
               <img style={{ maxHeight: "37.56px" }} src={OpenSea} alt="" />
             </Carousel>
           </div>
-
-          {/* <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <img src={MBtoken} alt="MBtoken" className="nft" />
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <img src={Metamask} alt="Metamask" className="nft" />
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <img src={OpenSea} alt="Opensea" className="nft" />
-            </div>
-          </div> */}
         </div>
 
         <div className="community_section" id="community">
@@ -137,11 +125,11 @@ class Home extends React.Component {
             </p>
             <button className="mybtn mybtn-secondary">Learn more</button>
           </div>
-          <div className="img-container sm-d-none md-d-none">
+          <div className="img-container sm-d-none md-d-none lg-d-flex">
             <img
               src={grpPhoto}
               alt="photoGroup"
-              className="photogroup sm-d-none"
+              className="photogroup sm-d-none lg-d-flex"
             />
           </div>
         </div>

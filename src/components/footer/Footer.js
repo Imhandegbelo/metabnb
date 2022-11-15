@@ -60,9 +60,11 @@ class Footer extends React.Component {
             </Col>
           </Row>
         </Container>
-        <div className="copywrite">
-          <div>
-            <p>&copy; 2022 Metabnb</p>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3 col-sm-6">
+              <p>&copy; 2022 Metabnb</p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,33 +1,25 @@
 import NiceModal, { useModal } from "@ebay/nice-modal-react";
-import Dialog from "rc-dialog";
-import "rc-dialog/assets/index.css";
-import arrowIcon from "../assets/img/arrow.svg";
-import closeIcon from "../assets/img/close-icon.svg";
-import metaLogo from "../assets/img/meta-logo.svg";
-import walletConnectLogo from "../assets/img/wallet-connect-logo.svg";
-import "./WalletModal.css";
+import Modal from "react-modal";
+import arrowIcon from "../../assets/img/arrow.svg";
+import closeIcon from "../../assets/img/close-icon.svg";
+import metaLogo from "../../assets/img/meta-logo.svg";
+import walletConnectLogo from "../../assets/img/wallet-connect-logo.svg";
+import "./connect-wallet.css";
 
-export const WalletModal = NiceModal.create(
-  function WalletModal() {
+export const ConnectWalletModal = NiceModal.create(
+  function ConnectWalletModal() {
     const modal = useModal();
 
     return (
-      <Dialog
-        visible={modal.visible}
-        wrapClassName="modal-center"
-        animation="zoom"
-        maskAnimation="fade"
-        onClose={modal.hide}
-        style={{
-          maxWidth: "600px",
-          width: "calc(100% - 32px)",
-        }}
-        closeIcon={<></>}
+      <Modal
+        isOpen={modal.visible}
+        onRequestClose={modal.hide}
+        contentLabel="Example Modal"
+        ariaHideApp={false}
       >
         <div className="modal connect-wallet-modal">
           <div className="header d-flex justify-content-space-between align-items-center">
             <h4 className="modal-title">Connect Wallet</h4>
-
             <button className="close-button" onClick={modal.hide}>
               <img src={closeIcon} alt="" />
             </button>
@@ -36,14 +28,12 @@ export const WalletModal = NiceModal.create(
           <div className="body">
             <div className="d-grid" style={{ "--gap": "16px" }}>
               <p className="title">Choose your preferred wallet:</p>
-
               <button className="d-flex justify-content-space-between align-items-center">
                 <div
                   className="d-flex align-items-center"
                   style={{ "--gap": "16px" }}
                 >
                   <img src={metaLogo} alt="" />
-
                   <p>Metamask</p>
                 </div>
 
@@ -65,9 +55,7 @@ export const WalletModal = NiceModal.create(
             </div>
           </div>
         </div>
-      </Dialog>
+      </Modal>
     );
   }
 );
-
-

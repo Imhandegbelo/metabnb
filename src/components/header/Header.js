@@ -3,13 +3,12 @@ import logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import hamburger from "../../assets/img/hamburger.svg";
-import { MobileMenu } from "../MobileMenu";
-import {WalletModal} from "../WalletModal";
+import { ConnectWalletModal } from "../connect-wallet/connect-wallet";
 import NiceModal from "@ebay/nice-modal-react";
+import { MobileMenu } from "../MobileMenu";
 
 class Header extends React.Component {
   render() {
-    // export function Header(){
     return (
       <div className="header md-1-margin">
         <div>
@@ -26,7 +25,7 @@ class Header extends React.Component {
         <div className="">
           <button
             className="mybtn md-d-none lg-d-flex"
-            onClick={() => NiceModal.show(WalletModal)}
+            onClick={() => NiceModal.show(ConnectWalletModal)}
           >
             Connect wallet
           </button>
@@ -37,7 +36,6 @@ class Header extends React.Component {
           >
             <img src={hamburger} alt="" />
           </button>
-          {/* d-none lg-d-block */}
         </div>
       </div>
     );

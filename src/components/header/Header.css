@@ -1,13 +1,14 @@
-.header__nav-link{
+.header__nav-link {
     text-decoration: none;
     font-weight: 500;
     font-size: 22px;
     color: #434343;
 }
 
-.logo{
+.logo {
     margin-top: 5px;
 }
+
 .header {
     max-width: 1240px;
     display: flex;
@@ -34,19 +35,30 @@
     line-height: 25px;
     color: #434343;
 }
-.links a:hover{
+
+.links a:hover {
     cursor: pointer;
     color: #A02279;
     text-decoration: underline #A02279;
 }
-@media(max-width: 1023px){
-    .md-d-none{
+
+@media(max-width: 1023px) {
+    .md-d-none {
         display: none;
     }
 }
 
-@media (min-width:1024px){
-    .lg-d-flex{
+@media (min-width:1024px) {
+    .lg-d-flex {
         display: flex !important;
+    }
+
+    .header {
+        max-width: 1240px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 6rem !important;
+        height: 50px;
     }
 }

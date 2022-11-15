@@ -79,11 +79,18 @@
   .md-1-margin {
     margin: 1rem !important;
   }
+
   .sm-d-none {
     display: none !important;
   }
 
-  .learn-more-section h1, .learn-more-section p{
+  .sm-d-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learn-more-section h1,
+  .learn-more-section p {
     margin-top: 0 !important;
   }
 }
@@ -110,7 +117,8 @@
   .md-align-items-center {
     align-items: center;
   }
-  .copywrite p{
+
+  .copywrite p {
     padding: 1 rem;
   }
 }

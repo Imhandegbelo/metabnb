@@ -2,8 +2,8 @@ import NiceModal, { useModal } from "@ebay/nice-modal-react";
 import Drawer from "rc-drawer";
 import "rc-drawer/assets/index.css";
 import { NavLink } from "react-router-dom";
-import {WalletModal} from "./WalletModal";
 import "./MobilMenu.css";
+import { ConnectWalletModal } from "./connect-wallet/connect-wallet";
 
 export const MobileMenu = NiceModal.create(function MobileMenu() {
   const modal = useModal();
@@ -57,7 +57,7 @@ export const MobileMenu = NiceModal.create(function MobileMenu() {
               <button
                 className="mybtn"
                 onClick={() => {
-                  NiceModal.show(WalletModal);
+                  NiceModal.show(ConnectWalletModal);
                   modal.hide();
                 }}
               >
